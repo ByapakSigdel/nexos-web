@@ -49,7 +49,10 @@ export default function Home() {
           <thead>
             <tr className="bg-gray-700 text-gray-300 uppercase text-sm">
               <th className="p-3 text-left border-b border-gray-600">📌 ID</th>
-              <th className="p-3 text-left border-b border-gray-600">📊 Value</th>
+              <th className="p-3 text-left border-b border-gray-600">📊 Sensor 1</th>
+              <th className="p-3 text-left border-b border-gray-600">📊 Sensor 2</th>
+              <th className="p-3 text-left border-b border-gray-600">📊 Sensor 3</th>
+              <th className="p-3 text-left border-b border-gray-600">📊 Sensor 4</th>
               <th className="p-3 text-left border-b border-gray-600">📅 Timestamp</th>
             </tr>
           </thead>
@@ -63,7 +66,10 @@ export default function Home() {
                   }`}
                 >
                   <td className="p-3">{item.id}</td>
-                  <td className="p-3 text-green-400 font-semibold">{item.value}</td>
+                  <td className="p-3 text-green-400 font-semibold">{item.val1}</td>
+                  <td className="p-3 text-green-400 font-semibold">{item.val2}</td>
+                  <td className="p-3 text-green-400 font-semibold">{item.val3}</td>
+                  <td className="p-3 text-green-400 font-semibold">{item.val4}</td>
                   <td className="p-3 text-gray-400 text-sm">
                     {new Date(item.created_at).toLocaleString()}
                   </td>
